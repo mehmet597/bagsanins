@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.root{
+    --main-color: #043d72;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --border:0.1rem solid rgba(255, 255, 255,0.4);
+}
+
+*{
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+/*! base html codes!*/
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color:white;
+}
+html ::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: black;
+}
+body{
+    background-color:#043d72 ;
+}
+section{
+    padding: 3.5rem 7%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #5b5b5b;
+    cursor: pointer;
+}
+.heading{
+    color: #5b5b5b;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 50rem;
+    border-bottom: 0.1rem solid #5b5b5b;
+    
+}
+.heading span{
+    text-transform: uppercase;
+    color: #043d72;
+}
+
+/*! header start!*/
+.header .logo img{
+    height: 7rem;
+}
+.header {
+    background-color:#FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #000000;
+    border-bottom: 0.1rem solid transparent;    
+}
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color: #043d72;
+    padding-bottom: 0.5rem;
+}
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+#btn_nav{
+    display: none;
+}
+/*! header end!*/
+.home1{
+    min-height: 103.2vh;
+    
+    align-items: center;
+    background:no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    background-image: url(../resim/crop-architect-opening-blueprint.jpg);
+    opacity: 80%;
+}
+.home{
+    min-height: 103.2vh;
+    display: flex;
+    align-items: center;
+    background:no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    background-image: url(../resim/crop-architect-opening-blueprint.jpg);
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: #043d72;
+}
+.home .content p{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #043d72;
+    
+}
+.contact .heading{
+    margin-top: 10rem;
+}
+.contact .row {
+    display: flex;
+    background-color: #000000;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+    margin-top: -40rem;
+}
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.contact .row form .inputbox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: 0.1rem solid rgba(255, 255, 255,0.4);
+}
+.contact .row form .inputbox i{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.contact .row form .inputbox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    text-transform: none;
+    background-color: transparent;
+}
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+.contact .row form .btn{
+    color: #5b5b5b;
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row img{
+ width: 100%;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.about .heading{
+    margin-top: 10rem;
+}
+.about .row {
+    display: flex;
+    background-color: #000000;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+    margin-top: -40rem;
+}
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header .logo img{
+        height: 7rem;
+    }
+    section{
+        padding: 2rem;
+    }
+
+}
+@media(max-width:768px){
+    #btn_nav{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 95%;
+        background-color: white;
+        height: calc(100vh - 9rem);
+        width: 30rem;
+        box-shadow: 0px 20px 14px 0px rgb(0 0 0 /75%);
+        right: -100%;
+    }
+    .header .navbar .active{
+        right: 3rem;
+    }
+    .header .navbar a{
+       color: black;
+       display: inline-block;
+       margin: 1.5rem;
+       padding: 0.5rem;
+       font-size: 2rem;         
+    }
+}
+.Projelerimiz .heading{
+    margin-top: 5rem;
+}
+
+.Projelerimiz .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.Projelerimiz .box-container .box{
+    padding: 3rem;
+    width: 850;
+    background-color: #FFFFFF;
+    border-radius: 3rem;
+    background-color: #FFFFFF;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.Projelerimiz .box-container .box img{
+    width: 600px;
+    height: 750;
+    object-fit: cover;
+    float: left ;
+}
+.Projelerimiz .box-container .box .category{
+    font-size: 1.2rem;
+}
+.Projelerimiz .box-container .box h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+.Projelerimiz{
+    margin-top: -40rem;
+}
+.Projelerimiz .box-container .box p{
+    float: right;
+}
+.content1 .image img {
+    flex: 1 1 45rem;
+    width: 50%;
+}
+.content1  .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
